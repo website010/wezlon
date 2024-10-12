@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <script>
+    function callme()
+    {
+    var a=document.getElementById("htag").innerHTML;
+    document.getElementById("ptag").innerHTML="it's from h tag="+a;
+    }
+
+    function myfun_dblclick(){
+        alert("dllclicked")
+    }
+    function myfun_mouseover(){
+        alert("mousover")
+    }
+    function myfun_mouseout(){
+        alert("mousout")
+    }
+
+
+   </script>
+   <h4 id="htag" ondblclick="myfun_dblclick()">hello</h4>
+   <h4 id="atag" onmouseover="myfun_mouseover()">world</h4>
+   <h4 id="btag" onmouseout="myfun_mouseout()">vvvvvvvvvvvvvvv</h4>
+   <p id="ptag">goodluck</p>
+   <button onclick="callme()">pressme</button>
+   
+</body>
+</html>
